@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>burka</title>
+    <script src="../js/tailwindcss.js"></script>
+    <script src="../js/alpine.js" defer></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="loona">
+    <header class="grid grid-cols-3 bg-pink-500 text-violet-800 p-4 px-10 text-xl border-b-6 border-violet-800">
+    <a href="../index.html" class="block hover:text-cyan-500 hover:scale-110 transition duration-400 w-1/7 font-bold ease-in-out"
+    >Home</a>
+    <nav>
+        <ul class="flex gap-x-5 justify-self-center">
+            <li><a href="1.html" class="block hover:text-cyan-500 hover:scale-110 transition duration-400">Page1</a></li>
+            <li><a href="2.html" class="block hover:text-cyan-500 hover:scale-110 transition duration-400">Page2</a></li>
+            <li><a href="3.html" class="block hover:text-cyan-500 hover:scale-110 transition duration-400">Page3</a></li>
+            <li><a href="https://surzikov.github.io/52chan" target="_blank" rel="noopener noreferrer" class="block hover:text-cyan-500 hover:scale-110 transition duration-400 bg-[#e4b56e] border-4 border-[#e28c6a]">Форумы</a></li>
+        </ul>
+    </nav>
+    <ul class="flex gap-x-5 justify-self-end">
+        <li
+        x-show="!isData"
+        ><a href="" class="block hover:text-cyan-500 hover:scale-110 transition duration-400"
+            x-on:click.prevent="visibleFunction(`isRegister`)"
+            >Register</a></li>
+        <li
+        x-show="!isData"
+        ><a href="" class="block hover:text-cyan-500 hover:scale-110 transition duration-400"
+            x-on:click.prevent="visibleFunction(`isLogin`)"
+            >Login</a></li>
+        <li
+        x-show="visible.isUser"
+        ><a href="" class="block hover:text-cyan-500 hover:scale-110 transition duration-400"
+            >Exit</a></li>
+    </ul>
+</header>
+
+<main class="p-6">
+    <h1 class="py-4 text-4xl font-bold text-violet-800">Galya gde hleb!!</h1>
+<table >
+    <tr>
+        <td class="w-30 h-10 border-4 border-pink-500 bg-pink-200">BFC 1</td>
+        <td class="w-30 h-10 border-4 border-pink-500 bg-pink-200">BFC 2</td>
+        <td class="w-30 h-10 border-4 border-pink-500 bg-pink-200">BFC 3</td>
+    </tr>
+    <tr>
+        <td class="w-30 h-10 border-4 border-pink-500 bg-pink-200">56 KG</td>
+        <td class="w-30 h-10 border-4 border-pink-500 bg-pink-200">72 KG</td>
+        <td class="w-30 h-10 border-4 border-pink-500 bg-pink-200">88 KG</td> 
+    </tr>
+    <tr>
+        <td class="w-30 h-10 border-4 border-pink-500 bg-pink-200">66 KG</td>
+        <td class="w-30 h-10 border-4 border-pink-500 bg-pink-200">77 KG</td>
+        <td class="w-30 h-10 border-4 border-pink-500 bg-pink-200">250 KG</td> 
+    </tr>
+    <div id="class">
+
+    </div>
+    <div id="class">
+
+    </div>
+</table>
+<img src="https://i.ytimg.com/vi/Pk2toLzzmIU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAYaqTXWwqTa6cB81L91fYY-swZ-w" class="w-400 h-100 py-4">
+<img src="https://i.ytimg.com/vi/Pk2toLzzmIU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAYaqTXWwqTa6cB81L91fYY-swZ-w" class="w-400 h-100 py-4">
+<img src="https://i.ytimg.com/vi/Pk2toLzzmIU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAYaqTXWwqTa6cB81L91fYY-swZ-w" class="w-400 h-100 py-4">
+<img src="https://i.ytimg.com/vi/Pk2toLzzmIU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAYaqTXWwqTa6cB81L91fYY-swZ-w" class="w-400 h-100 py-4">
+</main>
+</body>
+</html>

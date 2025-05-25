@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson1</title>
+    <script src="js/tailwindcss.js"></script>
+    <script src="js/alpine.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="egipet">
+    <header class="grid grid-cols-3 bg-pink-500 text-violet-800 p-4 px-10 text-xl border-b-6 border-violet-800">
+    <a href="index.html" class="block hover:text-cyan-500 hover:scale-110 transition duration-400 w-1/7 font-bold ease-in-out"
+    >Home</a>
+    <nav>
+        <ul class="flex gap-x-5 justify-self-center">
+            <li><a href="pages/1.html" class="block hover:text-cyan-500 hover:scale-110 transition duration-400">Page1</a></li>
+            <li><a href="pages/2.html" class="block hover:text-cyan-500 hover:scale-110 transition duration-400">Page2</a></li>
+            <li><a href="pages/3.html" class="block hover:text-cyan-500 hover:scale-110 transition duration-400">Page3</a></li>
+            <li><a href="https://surzikov.github.io/52chan" target="_blank" rel="noopener noreferrer" class="block hover:text-cyan-500 hover:scale-110 transition duration-400 bg-[#e4b56e] border-4 border-[#e28c6a]">Форумы</a></li>
+        </ul>
+    </nav>
+    <ul class="flex gap-x-5 justify-self-end">
+        <li
+        x-show="!isData"
+        ><a href="" class="block hover:text-cyan-500 hover:scale-110 transition duration-400"
+            x-on:click.prevent="visibleFunction(`isRegister`)"
+            >Register</a></li>
+        <li
+        x-show="!isData"
+        ><a href="" class="block hover:text-cyan-500 hover:scale-110 transition duration-400"
+            x-on:click.prevent="visibleFunction(`isLogin`)"
+            >Login</a></li>
+        <li
+        x-show="visible.isUser"
+        ><a href="" class="block hover:text-cyan-500 hover:scale-110 transition duration-400"
+            >Exit</a></li>
+    </ul>
+</header>
+
+<main class="p-6">
+    <h1 class="py-2 text-5xl" title="Заголовок 1">EGIPETSKAYA SILA </h1>
+    <H2 class="py-2 text-4xl">Zhirtreso-combinat in the kvadrate</H2>
+    <h3 class="py-2 text-3xl">Galya zhrat!</h3>
+    <h3 class="py-2 text-2xl"> GALYA, BREAD!! &#9773;</h3>
+    <h4 class="py-2 text-xl">When you apply for a VTB card, mans don’t yell at VTB!</h4>
+<p>Галя хлеб! коля сначала селфи</p>
+    <P>Начала смотреть сериал вместе с братишкой, и мы смеялись над ним уже вместе. Брат с того времени успел вымахать за два метра роста и более 90 кг живого веса - из мальчишки-школьника превратился в натурального амбала. <br> Время, проведенное вместе, когда он был еще ребенком вспоминаю всегда с теплотой и смехом. Он у меня еще тот шутник, у нас множество совместных приколов, понятных только нам. Фразочки и цитаты из сериала прочно вошли в нашу с ним лексику. Например,<STRong> иногда чтобы его поддеть называю его "Люсей". Помните, Николай Петрович часто так называл своего сына Костю. У нас с братом вообще существует определение "как Костя Воронин" и "как дед из Ворониных".</STRong></P>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Accusamus distinctio, a libero obcaecati vitae doloribus similique corporis natus assumenda illo consequatur eaque ut perferendis et quis autem nesciunt cum.</b>  Voluptate!</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio delectus cum culpa deleniti ullam reprehenderit ipsam vel. <strong>BURYLOV</strong> weighs <b>3000 KG.</b> Quaerat, reiciendis. Soluta?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ratione officia incidunt reiciendis, numquam totam quod voluptatibus beatae consectetur illo alias cum enim labore vel? Dolores sequi exercitationem doloremque quis?</p>
+<p>Почта нужна не для того, чтобы письма отправлять, а для того, чтобы бабам было где зимой собираться.</p>
+<p>Брак — это проверка. Сколько ты всего сможешь выдержать, пока смерть не разлучит вас. Ну, другой вопрос, будет она естественной или вы <b>нахрен поубиваете друг друга!</b></p>
+&#128386; Почта России. Цена за отправку 19455&#8381;
+<p>Свежая свинина, вкусная свинина, приходите в BFC! Здесь высокие цены, зато качественная Бурылина. Не упустите скидку в 45% на свеже-приготовленную Бурылину. <strong>Самая вкусная и свежая Бурылина на свете только у нас, в BFC!</strong><sup>2</sup></p>
+<ul>
+<li>Line 1</li>
+<li>Line 2</li>
+<li>Line 3</li>
+<li>Line 4</li>    
+</ul>
+<ol>
+<li>BFC 1</li>
+<li>BFC 2</li>
+<li>BFC 3</li>
+<li>BFC 4</li>
+</ol>
+<p><a href="https://eda.ru/wiki/ingredienty/myaso-myasnaya-gastronomiya/svinina-13480" target="_blank" rel="noopener noreferrer" class="block hover:text-cyan-500 hover:scale-110 transition duration-400 text-blue-800 w-1/14 py-1 text-xl">Svinina.ru</a></p>
+<p></p><a href="https://code.mu/ru/markup/book/prime/" target="_blank" rel="noopener noreferrer" class="block hover:text-cyan-500 hover:scale-110 transition duration-400 text-blue-800 w-1/14 py-1 text-xl">Trepatchev.ru</a></p>
+<p><a href="https://www.rzd.ru/" target="_blank" rel="noopener noreferrer" class="block hover:text-cyan-500 hover:scale-110 transition duration-400 text-blue-800 w-1/14 py-1 text-xl">rzd.ru</a></p>
+<a href="https://m.youtube.com/?hl=ru" target="_blank" rel="noopener noreferrer" class="block hover:text-cyan-500 hover:scale-110 transition duration-400 text-blue-800 w-1/14 py-1 text-xl">Youtube.com</a>
+</main>
+
+</body>
+</html>

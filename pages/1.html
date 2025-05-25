@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page with pictures</title>
+    <script src="../js/tailwindcss.js"></script>
+    <script src="../js/alpine.js" defer></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="nikolai">
+    <header class="grid grid-cols-3 bg-pink-500 text-violet-800 p-4 px-10 text-xl border-b-6 border-violet-800">
+    <a href="../index.html" class="block hover:text-cyan-500 hover:scale-110 transition duration-400 w-1/7 font-bold ease-in-out"
+    >Home</a>
+    <nav>
+        <ul class="flex gap-x-5 justify-self-center">
+            <li><a href="1.html" class="block hover:text-cyan-500 hover:scale-110 transition duration-400">Page1</a></li>
+            <li><a href="2.html" class="block hover:text-cyan-500 hover:scale-110 transition duration-400">Page2</a></li>
+            <li><a href="3.html" class="block hover:text-cyan-500 hover:scale-110 transition duration-400">Page3</a></li>
+            <li><a href="https://surzikov.github.io/52chan" target="_blank" rel="noopener noreferrer" class="block hover:text-cyan-500 hover:scale-110 transition duration-400 bg-[#e4b56e] border-4 border-[#e28c6a]">Форумы</a></li>
+        </ul>
+    </nav>
+    <ul class="flex gap-x-5 justify-self-end">
+        <li
+        x-show="!isData"
+        ><a href="" class="block hover:text-cyan-500 hover:scale-110 transition duration-400"
+            x-on:click.prevent="visibleFunction(`isRegister`)"
+            >Register</a></li>
+        <li
+        x-show="!isData"
+        ><a href="" class="block hover:text-cyan-500 hover:scale-110 transition duration-400"
+            x-on:click.prevent="visibleFunction(`isLogin`)"
+            >Login</a></li>
+        <li
+        x-show="visible.isUser"
+        ><a href="" class="block hover:text-cyan-500 hover:scale-110 transition duration-400"
+            >Exit</a></li>
+    </ul>
+</header>
+
+<main class="p-6">
+    <h1 class="text-4xl font-bold py-4">Николай Петрович загуденько</h1>
+        <img src="https://i.ibb.co/Pcfnv76/magicut-1716804258411.jpg" alt="Pavlova in the volleyball" width="1280px" class="border-5 border-pink-500">
+        <img src="../images/IMG_20240204_210255.jpg" alt="" class="border-5 border-pink-500 w-320">
+        <img src="https://media1.tenor.com/m/zoqoNLiPu2MAAAAC/loona-helluva-boss-loona.gif" alt="" width="750" class="border-5 border-pink-500 w-320">
+        <img src="https://avatars.dzeninfra.ru/get-zen_doc/1628837/pub_62e4ec18e13ed15dc1f357aa_62e4ee86ba32e636febd4f6a/scale_1200" alt="ГАЛЯ!!" class="border-5 border-pink-500 w-320">
+<img src="https://avatars.dzeninfra.ru/get-zen_doc/2455156/pub_62e4ec18e13ed15dc1f357aa_62e4f803417ab83ed9737983/scale_1200" alt="" width="1000px" class="border-5 border-pink-500 w-320">
+<img src="https://photobooth.cdn.sports.ru/preset/post/c/76/1e3f1ef4940fcb073d91b26941a57.jpeg" alt="" width= "1450px" class="border-5 border-pink-500 w-320">
+<img src="https://i.ibb.co/4FY1wkd/IMG-20240913-100533-583.jpg" alt="" width= "1000px" class="border-5 border-pink-500 w-320">
+<img src="https://sun9-18.userapi.com/impg/rcaZp0KXAxm4K7ODL6M3hzIZ8omPKlIlgWNufA/_H8E8tXMxSU.jpg?size=604x317&quality=95&sign=9de19ec81f6218ae77aa8df3616e9285&type=album" alt="" class="border-5 border-pink-500 w-320">
+<img src="https://sun9-80.userapi.com/impg/B275xMejbQcW88619-4T_u29MOjWs4ZIL_pGuQ/sQBAO7V4DeM.jpg?size=1000x562&quality=95&sign=ce4a6ceee681d6010237a418484cbdcf&type=album" alt="" class="border-5 border-pink-500 w-320">
+<img src="../images/ukitt.PNG" alt="" class="border-5 border-pink-500 w-320">
+</main>
+<style>
+
+</style>
+</body>
+</html>
